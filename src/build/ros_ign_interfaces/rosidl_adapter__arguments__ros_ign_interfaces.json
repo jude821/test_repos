@@ -1,0 +1,23 @@
+{
+  "package_name": "ros_ign_interfaces",
+  "non_idl_tuples": [
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/Contact.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/Contacts.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/Dataframe.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/Entity.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/EntityFactory.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/GuiCamera.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/JointWrench.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/Light.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/ParamVec.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/StringVec.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/TrackVisual.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/VideoRecord.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/WorldControl.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:msg/WorldReset.msg",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:srv/ControlWorld.srv",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:srv/DeleteEntity.srv",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:srv/SetEntityPose.srv",
+    "/home/ubuntu/robot_ws/src/ros_ign/ros_ign_interfaces:srv/SpawnEntity.srv"
+  ]
+}

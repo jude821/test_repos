@@ -1,0 +1,199 @@
+[0.859s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install', '--symlink-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release']
+[0.859s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f5fa80811b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5fa8054760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5fa8054760>>, mixin_verb=('build',))
+[0.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.888s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.888s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/robot_ws/src'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extensions ['ignore', 'ignore_ament_install']
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extension 'ignore'
+[0.896s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extension 'ignore_ament_install'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extensions ['colcon_pkg']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extension 'colcon_pkg'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extensions ['colcon_meta']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extension 'colcon_meta'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extensions ['ros']
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(multi_robot_arm) by extension 'ros'
+[0.899s] DEBUG:colcon.colcon_core.package_identification:Package 'multi_robot_arm' with type 'ros.ament_cmake' and name 'multi_robot_arm'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'ignore'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'ignore_ament_install'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['colcon_pkg']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'colcon_pkg'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['colcon_meta']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'colcon_meta'
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['ros']
+[0.899s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'ros'
+[0.899s] DEBUG:colcon.colcon_core.package_identification:Package 'pymoveit2' with type 'ros.ament_cmake' and name 'pymoveit2'
+[0.899s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.899s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.899s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.899s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.899s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.952s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.952s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.973s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 18 installed packages in /home/ubuntu/install
+[0.981s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/ubuntu/turtlebot3_ws/install
+[0.990s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 64 installed packages in /home/ubuntu/ws_moveit/install
+[1.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 401 installed packages in /opt/ros/humble
+[1.001s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'cmake_target' from command line to 'None'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'cmake_clean_first' from command line to 'False'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'cmake_force_configure' from command line to 'False'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'ament_cmake_args' from command line to 'None'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'multi_robot_arm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.070s] DEBUG:colcon.colcon_core.verb:Building package 'multi_robot_arm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/robot_ws/src/build/multi_robot_arm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/robot_ws/src/install', 'merge_install': True, 'path': '/home/ubuntu/robot_ws/src/multi_robot_arm', 'symlink_install': True, 'test_result_base': None}
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_first' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_force_configure' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'ament_cmake_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.078s] DEBUG:colcon.colcon_core.verb:Building package 'pymoveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/robot_ws/src/build/pymoveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/robot_ws/src/install', 'merge_install': True, 'path': '/home/ubuntu/robot_ws/src/pymoveit2', 'symlink_install': True, 'test_result_base': None}
+[1.086s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.094s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.094s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/robot_ws/src/multi_robot_arm' with build type 'ament_cmake'
+[1.095s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/robot_ws/src/multi_robot_arm'
+[1.105s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.105s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.105s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.150s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/robot_ws/src/pymoveit2' with build type 'ament_cmake'
+[1.150s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/robot_ws/src/pymoveit2'
+[1.159s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.159s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/multi_robot_arm -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[1.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_ws/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/pymoveit2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[2.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_ws/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/pymoveit2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[2.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_ws/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/pymoveit2 -- -j20 -l20
+[3.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_ws/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/pymoveit2 -- -j20 -l20
+[3.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_ws/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/pymoveit2
+[3.331s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[3.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_ws/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/pymoveit2
+[3.341s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake module files
+[3.342s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake config files
+[3.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[3.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[3.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robot_ws/src/install/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[3.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/pymoveit2/hook/cmake_prefix_path.sh'
+[3.355s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib'
+[3.355s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[3.355s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/pkgconfig/pymoveit2.pc'
+[3.355s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/python3.10/site-packages'
+[3.355s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[3.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.ps1'
+[3.364s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.dsv'
+[3.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.sh'
+[3.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.bash'
+[3.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.zsh'
+[3.365s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robot_ws/src/install/share/colcon-core/packages/pymoveit2)
+[3.402s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[3.410s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake module files
+[3.411s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake config files
+[3.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robot_ws/src/install/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[3.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/pymoveit2/hook/cmake_prefix_path.sh'
+[3.421s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib'
+[3.421s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[3.421s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/pkgconfig/pymoveit2.pc'
+[3.421s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/python3.10/site-packages'
+[3.421s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[3.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.ps1'
+[3.432s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.dsv'
+[3.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.sh'
+[3.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.bash'
+[3.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/pymoveit2/package.zsh'
+[3.433s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robot_ws/src/install/share/colcon-core/packages/pymoveit2)
+[42.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/multi_robot_arm -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[42.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/multi_robot_arm -- -j20 -l20
+[42.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/multi_robot_arm -- -j20 -l20
+[42.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/multi_robot_arm
+[42.852s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multi_robot_arm)
+[42.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/multi_robot_arm
+[42.861s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake module files
+[42.862s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake config files
+[42.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_robot_arm', 'cmake_prefix_path')
+[42.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/hook/cmake_prefix_path.ps1'
+[42.872s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/hook/cmake_prefix_path.dsv'
+[42.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/hook/cmake_prefix_path.sh'
+[42.872s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib'
+[42.872s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[42.873s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/pkgconfig/multi_robot_arm.pc'
+[42.873s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/python3.10/site-packages'
+[42.873s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[42.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.ps1'
+[42.881s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.dsv'
+[42.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.sh'
+[42.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.bash'
+[42.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.zsh'
+[42.882s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robot_ws/src/install/share/colcon-core/packages/multi_robot_arm)
+[42.909s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multi_robot_arm)
+[42.918s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake module files
+[42.918s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install' for CMake config files
+[42.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('multi_robot_arm', 'cmake_prefix_path')
+[42.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/hook/cmake_prefix_path.ps1'
+[42.927s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/hook/cmake_prefix_path.dsv'
+[42.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/hook/cmake_prefix_path.sh'
+[42.927s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib'
+[42.927s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[42.927s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/pkgconfig/multi_robot_arm.pc'
+[42.927s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/lib/python3.10/site-packages'
+[42.928s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/robot_ws/src/install/bin'
+[42.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.ps1'
+[42.937s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.dsv'
+[42.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.sh'
+[42.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.bash'
+[42.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.zsh'
+[42.938s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/robot_ws/src/install/share/colcon-core/packages/multi_robot_arm)
+[42.938s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.938s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.938s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[42.938s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[43.008s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[43.008s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[43.008s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[43.008s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[43.009s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[43.009s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[43.018s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robot_ws/src/install/local_setup.ps1'
+[43.018s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/robot_ws/src/install/_local_setup_util_ps1.py'
+[43.019s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robot_ws/src/install/setup.ps1'
+[43.029s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robot_ws/src/install/local_setup.sh'
+[43.029s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/robot_ws/src/install/_local_setup_util_sh.py'
+[43.030s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robot_ws/src/install/setup.sh'
+[43.039s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robot_ws/src/install/local_setup.bash'
+[43.039s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robot_ws/src/install/setup.bash'
+[43.050s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/robot_ws/src/install/local_setup.zsh'
+[43.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/robot_ws/src/install/setup.zsh'

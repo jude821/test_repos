@@ -1,0 +1,33 @@
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Found controller_manager: 2.32.0 (/opt/ros/humble/share/controller_manager/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+-- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+-- Configuring incomplete, errors occurred!
+See also "/home/ubuntu/robot_ws/src/build/ign_ros2_control/CMakeFiles/CMakeOutput.log".
+[31mCMake Error at CMakeLists.txt:44 (find_package):
+  By not providing "Findignition-gazebo3.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "ignition-gazebo3", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ignition-gazebo3"
+  with any of the following names:
+
+    ignition-gazebo3Config.cmake
+    ignition-gazebo3-config.cmake
+
+  Add the installation prefix of "ignition-gazebo3" to CMAKE_PREFIX_PATH or
+  set "ignition-gazebo3_DIR" to a directory containing one of the above
+  files.  If "ignition-gazebo3" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m

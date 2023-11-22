@@ -1,0 +1,1128 @@
+[ 13%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/joint_trajectory_controller.dir/src/trajectory.cpp.o[0m
+[ 20%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o[0m
+[ 33%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 33%] Built target gtest_main
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type joint_trajectory_controller::JointTrajectoryController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:177:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  177 |           ->set_point_before_trajectory_msg([01;31m[Knode_[m[K->now(), last_commanded_state_);
+      |                                             [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:181:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  181 |         (*traj_point_active_ptr_)->set_point_before_trajectory_msg([01;31m[Knode_[m[K->now(), state_current);
+      |                                                                    [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:191:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  191 |         ->sample([01;31m[Knode_[m[K->now(), state_desired, start_segment_itr, end_segment_itr);
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:259:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  259 |         feedback->header.stamp = [01;31m[Knode_[m[K->now();
+      |                                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:274:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  274 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Aborted due to state tolerance violation");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:274:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  274 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Aborted due to state tolerance violation");
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:274:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  274 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Aborted due to state tolerance violation");
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:279:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  279 |             [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Aborted due to goal tolerance violation");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:279:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  279 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Aborted due to goal tolerance violation");
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:279:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  279 |             RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Aborted due to goal tolerance violation");
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:300:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  300 |             [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Goal reached, success!");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:300:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  300 |             RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Goal reached, success!");
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:300:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  300 |             RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Goal reached, success!");
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:308:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  308 |             const double difference = [01;31m[Knode_[m[K->now().seconds() - traj_end.seconds();
+      |                                       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:317:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  317 |               [01;31m[KRCLCPP_WARN[m[K(
+      |               [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:318:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  318 |                 [01;31m[Knode_[m[K->get_logger(), "Aborted due goal_time_tolerance exceeding by %f seconds",
+      |                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:318:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  318 |                 [01;31m[Knode_[m[K->get_logger(), "Aborted due goal_time_tolerance exceeding by %f seconds",
+      |                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kvirtual joint_trajectory_controller::CallbackReturn joint_trajectory_controller::JointTrajectoryController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:438:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  438 |   const auto logger = [01;31m[Knode_[m[K->get_logger();
+      |                       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:441:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  441 |   joint_names_ = [01;31m[Knode_[m[K->get_parameter("joints").as_string_array();
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:456:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  456 |     command_interface_types_ = [01;31m[Knode_[m[K->get_parameter("command_interfaces").as_string_array();
+      |                                [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:565:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  565 |   state_interface_types_ = [01;31m[Knode_[m[K->get_parameter("state_interfaces").as_string_array();
+      |                            [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:642:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  642 |   default_tolerances_ = get_segment_tolerances(*[01;31m[Knode_[m[K, joint_names_);
+      |                                                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:642:48:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rclcpp::Node&[m[K’ from expression of type ‘[01m[Kstd::__shared_ptr_access<rclcpp_lifecycle::LifecycleNode, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Krclcpp_lifecycle::LifecycleNode[m[K’}
+  642 |   default_tolerances_ = get_segment_tolerances([01;31m[K*node_[m[K, joint_names_);
+      |                                                [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:30[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/tolerances.hpp:95:24:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kjoint_trajectory_controller::SegmentTolerances joint_trajectory_controller::get_segment_tolerances(const rclcpp::Node&, const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&)[m[K’
+   95 |   [01;36m[Kconst rclcpp::Node & node[m[K, const std::vector<std::string> & joint_names)
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:645:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  645 |   open_loop_control_ = [01;31m[Knode_[m[K->get_parameter("open_loop_control").get_value<bool>();
+      |                        [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:665:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  665 |   joint_command_subscriber_ = [01;31m[Knode_[m[K->create_subscription<trajectory_msgs::msg::JointTrajectory>(
+      |                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:672:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  672 |   const double state_publish_rate = [01;31m[Knode_[m[K->get_parameter("state_publish_rate").get_value<double>();
+      |                                     [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:683:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  683 |   publisher_ = [01;31m[Knode_[m[K->create_publisher<ControllerStateMsg>("~/state", rclcpp::SystemDefaultsQoS());
+      |                [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:707:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  707 |   last_state_publish_time_ = [01;31m[Knode_[m[K->now();
+      |                              [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:710:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  710 |   allow_partial_joints_goal_ = [01;31m[Knode_[m[K->get_parameter("allow_partial_joints_goal").get_value<bool>();
+      |                                [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:717:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  717 |     [01;31m[Knode_[m[K->get_parameter("action_monitor_rate").get_value<double>();
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:724:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  724 |     [01;31m[Knode_[m[K->get_node_base_interface(), node_->get_node_clock_interface(),
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:724:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  724 |     node_->get_node_base_interface(), [01;31m[Knode_[m[K->get_node_clock_interface(),
+      |                                       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:725:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  725 |     [01;31m[Knode_[m[K->get_node_logging_interface(), node_->get_node_waitables_interface(),
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:725:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  725 |     node_->get_node_logging_interface(), [01;31m[Knode_[m[K->get_node_waitables_interface(),
+      |                                          [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:726:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  726 |     std::string([01;31m[Knode_[m[K->get_name()) + "/follow_joint_trajectory",
+      |                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kvirtual joint_trajectory_controller::CallbackReturn joint_trajectory_controller::JointTrajectoryController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:745:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  745 |       [01;31m[KRCLCPP_ERROR[m[K(
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:746:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  746 |         [01;31m[Knode_[m[K->get_logger(), "Expected %zu '%s' command interfaces, got %zu.", joint_names_.size(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:746:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  746 |         [01;31m[Knode_[m[K->get_logger(), "Expected %zu '%s' command interfaces, got %zu.", joint_names_.size(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:759:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  759 |       [01;31m[KRCLCPP_ERROR[m[K(
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:760:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  760 |         [01;31m[Knode_[m[K->get_logger(), "Expected %zu '%s' state interfaces, got %zu.", joint_names_.size(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:760:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  760 |         [01;31m[Knode_[m[K->get_logger(), "Expected %zu '%s' state interfaces, got %zu.", joint_names_.size(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:787:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  787 |   last_state_publish_time_ = [01;31m[Knode_[m[K->now();
+      |                              [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kvoid joint_trajectory_controller::JointTrajectoryController::publish_state(const JointTrajectoryPoint&, const JointTrajectoryPoint&, const JointTrajectoryPoint&)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:880:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  880 |   if ([01;31m[Knode_[m[K->now() < (last_state_publish_time_ + state_publisher_period_))
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:887:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  887 |     last_state_publish_time_ = [01;31m[Knode_[m[K->now();
+      |                                [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse joint_trajectory_controller::JointTrajectoryController::goal_callback(const GoalUUID&, std::shared_ptr<const control_msgs::action::FollowJointTrajectory_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:912:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  912 |   [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Received new action goal");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:912:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  912 |   RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Received new action goal");
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:912:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  912 |   RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Received new action goal");
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:917:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  917 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Can't accept new action goals. Controller is not running.");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:917:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  917 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Can't accept new action goals. Controller is not running.");
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:917:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  917 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Can't accept new action goals. Controller is not running.");
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:926:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  926 |   [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Accepted new action goal");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:926:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  926 |   RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Accepted new action goal");
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:926:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  926 |   RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Accepted new action goal");
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse joint_trajectory_controller::JointTrajectoryController::cancel_callback(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:933:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  933 |   [01;31m[KRCLCPP_INFO[m[K(node_->get_logger(), "Got request to cancel goal");
+      |   [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:933:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  933 |   RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Got request to cancel goal");
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:933:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  933 |   RCLCPP_INFO([01;31m[Knode_[m[K->get_logger(), "Got request to cancel goal");
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:943:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  943 |     [01;31m[KRCLCPP_DEBUG[m[K(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:944:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  944 |       [01;31m[Knode_[m[K->get_logger(), "Canceling active action goal because cancel callback received.");
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:944:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  944 |       [01;31m[Knode_[m[K->get_logger(), "Canceling active action goal because cancel callback received.");
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kvoid joint_trajectory_controller::JointTrajectoryController::feedback_setup_callback(std::shared_ptr<rclcpp_action::ServerGoalHandle<control_msgs::action::FollowJointTrajectory> >)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:973:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  973 |   goal_handle_timer_ = [01;31m[Knode_[m[K->create_wall_timer(
+      |                        [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In lambda function:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1038:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1038 |       [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Invalid input size (%zu) for sorting", to_remap.size());
+      |       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1038:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1038 |       RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Invalid input size (%zu) for sorting", to_remap.size());
+      |                   [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1038:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1038 |       RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Invalid input size (%zu) for sorting", to_remap.size());
+      |                   [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kbool joint_trajectory_controller::JointTrajectoryController::validate_trajectory_point_field(size_t, const std::vector<double, std::allocator<double> >&, const string&, size_t, bool) const[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1077:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1077 |     [01;31m[KRCLCPP_ERROR[m[K(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1078:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1078 |       [01;31m[Knode_[m[K->get_logger(), "Mismatch between joint_names (%zu) and %s (%zu) at point #%zu.",
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1078:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1078 |       [01;31m[Knode_[m[K->get_logger(), "Mismatch between joint_names (%zu) and %s (%zu) at point #%zu.",
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:[m[K In member function ‘[01m[Kbool joint_trajectory_controller::JointTrajectoryController::validate_trajectory_msg(const JointTrajectory&) const[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1093:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1093 |       [01;31m[KRCLCPP_ERROR[m[K(
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1094:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1094 |         [01;31m[Knode_[m[K->get_logger(), "Joints on incoming trajectory don't match the controller joints.");
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1094:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1094 |         [01;31m[Knode_[m[K->get_logger(), "Joints on incoming trajectory don't match the controller joints.");
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1101 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Empty joint names on incoming trajectory.");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1101:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1101 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Empty joint names on incoming trajectory.");
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1101:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1101 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Empty joint names on incoming trajectory.");
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1116:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1116 |     if (trajectory_end_time < [01;31m[Knode_[m[K->now())
+      |                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1118:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1118 |       [01;31m[KRCLCPP_ERROR[m[K(
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1119:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1119 |         [01;31m[Knode_[m[K->get_logger(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1119:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1119 |         [01;31m[Knode_[m[K->get_logger(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1133:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1133 |       [01;31m[KRCLCPP_ERROR[m[K(
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1134:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1134 |         [01;31m[Knode_[m[K->get_logger(), "Incoming joint %s doesn't match the controller's joints.",
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1134:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1134 |         [01;31m[Knode_[m[K->get_logger(), "Incoming joint %s doesn't match the controller's joints.",
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1145:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1145 |       [01;31m[KRCLCPP_ERROR[m[K(
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1146:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1146 |         [01;31m[Knode_[m[K->get_logger(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/control_toolbox/control_toolbox/pid.hpp:41[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:1146:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+ 1146 |         [01;31m[Knode_[m[K->get_logger(),
+      |         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:28[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/src/joint_trajectory_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[ 40%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 40%] Built target gtest
+[ 46%] [32mBuilding CXX object CMakeFiles/test_load_joint_trajectory_controller.dir/test/test_load_joint_trajectory_controller.cpp.o[0m
+In file included from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/test/test_trajectory_controller_utils.hpp:27[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/test/test_load_joint_trajectory_controller.cpp:24[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_trajectory_controller/include/joint_trajectory_controller/joint_trajectory_controller.hpp:27:10:[m[K [01;31m[Kfatal error: [m[Kcontrol_toolbox/pid.hpp: No such file or directory
+   27 | #include [01;31m[K"control_toolbox/pid.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_load_joint_trajectory_controller.dir/build.make:76: CMakeFiles/test_load_joint_trajectory_controller.dir/test/test_load_joint_trajectory_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:246: CMakeFiles/test_load_joint_trajectory_controller.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/joint_trajectory_controller.dir/build.make:76: CMakeFiles/joint_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:163: CMakeFiles/joint_trajectory_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

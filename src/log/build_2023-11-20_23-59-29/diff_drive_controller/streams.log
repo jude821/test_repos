@@ -1,0 +1,814 @@
+[0.307s] Invoking command in '/home/ubuntu/robot_ws/src/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/diff_drive_controller -- -j20 -l20
+[0.408s] [  6%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[0.413s] [ 13%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o[0m
+[0.415s] [ 20%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[0.418s] [ 26%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[0.419s] [ 33%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/odometry.cpp.o[0m
+[0.435s] [ 40%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[3.169s] [ 46%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[3.551s] [ 46%] Built target gmock_main
+[8.122s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type diff_drive_controller::DiffDriveController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[8.123s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:144:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.123s]   144 |   auto logger = [01;31m[Knode_[m[K->get_logger();
+[8.123s]       |                 [01;31m[K^~~~~[m[K
+[8.123s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.123s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.123s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.123s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.123s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.123s]       |                                                    [01;36m[K^~~~~[m[K
+[8.138s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual diff_drive_controller::CallbackReturn diff_drive_controller::DiffDriveController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[8.138s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:295:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.138s]   295 |   auto logger = [01;31m[Knode_[m[K->get_logger();
+[8.138s]       |                 [01;31m[K^~~~~[m[K
+[8.138s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.138s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.138s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.138s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.138s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.138s]       |                                                    [01;36m[K^~~~~[m[K
+[8.139s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:298:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.139s]   298 |   left_wheel_names_ = [01;31m[Knode_[m[K->get_parameter("left_wheel_names").as_string_array();
+[8.139s]       |                       [01;31m[K^~~~~[m[K
+[8.139s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.139s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.139s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.139s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.139s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.139s]       |                                                    [01;36m[K^~~~~[m[K
+[8.140s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:299:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.140s]   299 |   right_wheel_names_ = [01;31m[Knode_[m[K->get_parameter("right_wheel_names").as_string_array();
+[8.140s]       |                        [01;31m[K^~~~~[m[K
+[8.140s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.140s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.140s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.140s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.140s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.140s]       |                                                    [01;36m[K^~~~~[m[K
+[8.141s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:315:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.141s]   315 |   wheel_params_.separation = [01;31m[Knode_[m[K->get_parameter("wheel_separation").as_double();
+[8.142s]       |                              [01;31m[K^~~~~[m[K
+[8.142s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.142s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.142s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.142s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.142s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.142s]       |                                                    [01;36m[K^~~~~[m[K
+[8.142s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:317:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.142s]   317 |     static_cast<size_t>([01;31m[Knode_[m[K->get_parameter("wheels_per_side").as_int());
+[8.142s]       |                         [01;31m[K^~~~~[m[K
+[8.143s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.143s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.143s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.143s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.143s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.143s]       |                                                    [01;36m[K^~~~~[m[K
+[8.143s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:318:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.143s]   318 |   wheel_params_.radius = [01;31m[Knode_[m[K->get_parameter("wheel_radius").as_double();
+[8.143s]       |                          [01;31m[K^~~~~[m[K
+[8.143s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.143s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.143s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.143s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.144s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.144s]       |                                                    [01;36m[K^~~~~[m[K
+[8.144s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:320:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.144s]   320 |     [01;31m[Knode_[m[K->get_parameter("wheel_separation_multiplier").as_double();
+[8.144s]       |     [01;31m[K^~~~~[m[K
+[8.145s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.145s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.145s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.145s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.145s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.145s]       |                                                    [01;36m[K^~~~~[m[K
+[8.145s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:322:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.145s]   322 |     [01;31m[Knode_[m[K->get_parameter("left_wheel_radius_multiplier").as_double();
+[8.146s]       |     [01;31m[K^~~~~[m[K
+[8.146s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.146s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.146s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.146s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.146s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.146s]       |                                                    [01;36m[K^~~~~[m[K
+[8.146s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:324:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.146s]   324 |     [01;31m[Knode_[m[K->get_parameter("right_wheel_radius_multiplier").as_double();
+[8.146s]       |     [01;31m[K^~~~~[m[K
+[8.147s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.147s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.147s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.147s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.147s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.147s]       |                                                    [01;36m[K^~~~~[m[K
+[8.147s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:334:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.147s]   334 |     [01;31m[Knode_[m[K->get_parameter("velocity_rolling_window_size").as_int());
+[8.147s]       |     [01;31m[K^~~~~[m[K
+[8.148s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.148s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.148s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.148s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.148s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.148s]       |                                                    [01;36m[K^~~~~[m[K
+[8.148s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:336:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.148s]   336 |   odom_params_.odom_frame_id = [01;31m[Knode_[m[K->get_parameter("odom_frame_id").as_string();
+[8.148s]       |                                [01;31m[K^~~~~[m[K
+[8.148s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.149s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.149s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.149s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.149s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.149s]       |                                                    [01;36m[K^~~~~[m[K
+[8.149s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:337:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.149s]   337 |   odom_params_.base_frame_id = [01;31m[Knode_[m[K->get_parameter("base_frame_id").as_string();
+[8.149s]       |                                [01;31m[K^~~~~[m[K
+[8.149s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.149s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.149s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.150s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.150s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.150s]       |                                                    [01;36m[K^~~~~[m[K
+[8.150s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:339:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.150s]   339 |   auto pose_diagonal = [01;31m[Knode_[m[K->get_parameter("pose_covariance_diagonal").as_double_array();
+[8.150s]       |                        [01;31m[K^~~~~[m[K
+[8.150s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.150s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.151s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.151s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.151s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.151s]       |                                                    [01;36m[K^~~~~[m[K
+[8.152s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:343:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.152s]   343 |   auto twist_diagonal = [01;31m[Knode_[m[K->get_parameter("twist_covariance_diagonal").as_double_array();
+[8.152s]       |                         [01;31m[K^~~~~[m[K
+[8.152s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.152s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.152s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.152s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.152s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.152s]       |                                                    [01;36m[K^~~~~[m[K
+[8.154s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:347:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.154s]   347 |   odom_params_.open_loop = [01;31m[Knode_[m[K->get_parameter("open_loop").as_bool();
+[8.154s]       |                            [01;31m[K^~~~~[m[K
+[8.155s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.155s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.155s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.155s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.155s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.156s]       |                                                    [01;36m[K^~~~~[m[K
+[8.156s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:348:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.156s]   348 |   odom_params_.position_feedback = [01;31m[Knode_[m[K->get_parameter("position_feedback").as_bool();
+[8.156s]       |                                    [01;31m[K^~~~~[m[K
+[8.156s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.156s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.156s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.156s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.157s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.157s]       |                                                    [01;36m[K^~~~~[m[K
+[8.157s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:349:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.157s]   349 |   odom_params_.enable_odom_tf = [01;31m[Knode_[m[K->get_parameter("enable_odom_tf").as_bool();
+[8.157s]       |                                 [01;31m[K^~~~~[m[K
+[8.157s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.157s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.158s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.158s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.158s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.158s]       |                                                    [01;36m[K^~~~~[m[K
+[8.158s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:352:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.158s]   352 |     static_cast<int>([01;31m[Knode_[m[K->get_parameter("cmd_vel_timeout").as_double() * 1000.0)};
+[8.159s]       |                      [01;31m[K^~~~~[m[K
+[8.159s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.159s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.159s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.159s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.160s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.160s]       |                                                    [01;36m[K^~~~~[m[K
+[8.161s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:353:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.161s]   353 |   publish_limited_velocity_ = [01;31m[Knode_[m[K->get_parameter("publish_limited_velocity").as_bool();
+[8.161s]       |                               [01;31m[K^~~~~[m[K
+[8.161s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.161s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.162s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.162s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.162s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.162s]       |                                                    [01;36m[K^~~~~[m[K
+[8.162s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:354:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.162s]   354 |   use_stamped_vel_ = [01;31m[Knode_[m[K->get_parameter("use_stamped_vel").as_bool();
+[8.162s]       |                      [01;31m[K^~~~~[m[K
+[8.162s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.162s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.162s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.163s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.163s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.163s]       |                                                    [01;36m[K^~~~~[m[K
+[8.163s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:359:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.163s]   359 |       [01;31m[Knode_[m[K->get_parameter("linear.x.has_velocity_limits").as_bool(),
+[8.163s]       |       [01;31m[K^~~~~[m[K
+[8.164s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.164s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.164s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.164s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.164s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.164s]       |                                                    [01;36m[K^~~~~[m[K
+[8.165s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.165s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.165s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.165s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.166s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:371:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.166s]   371 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error configuring linear speed limiter: %s", e.what());
+[8.166s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.166s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.166s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.166s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.166s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.166s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.166s]       |                                                    [01;36m[K^~~~~[m[K
+[8.167s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.167s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.168s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.168s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.168s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.168s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:371:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.168s]   371 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Error configuring linear speed limiter: %s", e.what());
+[8.169s]       |                  [01;31m[K^~~~~[m[K
+[8.169s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.169s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.169s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.169s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.169s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.169s]       |                                                    [01;36m[K^~~~~[m[K
+[8.170s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.170s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.171s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.171s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.171s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.171s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.171s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.171s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.171s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.171s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:371:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.171s]   371 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Error configuring linear speed limiter: %s", e.what());
+[8.171s]       |                  [01;31m[K^~~~~[m[K
+[8.171s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.171s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.172s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.172s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.172s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.172s]       |                                                    [01;36m[K^~~~~[m[K
+[8.173s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:377:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.173s]   377 |       [01;31m[Knode_[m[K->get_parameter("angular.z.has_velocity_limits").as_bool(),
+[8.174s]       |       [01;31m[K^~~~~[m[K
+[8.174s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.174s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.174s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.174s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.174s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.174s]       |                                                    [01;36m[K^~~~~[m[K
+[8.175s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.176s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.176s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.176s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.176s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.177s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.177s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.177s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.178s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.179s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:389:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.179s]   389 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "Error configuring angular speed limiter: %s", e.what());
+[8.180s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.180s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.180s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.180s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.180s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.181s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.181s]       |                                                    [01;36m[K^~~~~[m[K
+[8.181s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.183s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.184s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.184s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.184s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:389:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.184s]   389 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Error configuring angular speed limiter: %s", e.what());
+[8.184s]       |                  [01;31m[K^~~~~[m[K
+[8.184s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.185s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.185s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.185s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.185s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.185s]       |                                                    [01;36m[K^~~~~[m[K
+[8.185s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.185s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.185s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.185s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.186s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.187s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.187s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.187s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:389:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.187s]   389 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "Error configuring angular speed limiter: %s", e.what());
+[8.187s]       |                  [01;31m[K^~~~~[m[K
+[8.187s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.187s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.187s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.187s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.188s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.188s]       |                                                    [01;36m[K^~~~~[m[K
+[8.188s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:403:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.188s]   403 |       [01;31m[Knode_[m[K->create_publisher<Twist>(DEFAULT_COMMAND_OUT_TOPIC, rclcpp::SystemDefaultsQoS());
+[8.188s]       |       [01;31m[K^~~~~[m[K
+[8.188s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.188s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.188s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.189s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.189s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.189s]       |                                                    [01;36m[K^~~~~[m[K
+[8.196s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:418:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.196s]   418 |     velocity_command_subscriber_ = [01;31m[Knode_[m[K->create_subscription<Twist>(
+[8.196s]       |                                    [01;31m[K^~~~~[m[K
+[8.196s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.196s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.196s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.196s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.196s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.196s]       |                                                    [01;36m[K^~~~~[m[K
+[8.197s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.198s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.198s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.198s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.198s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.198s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In lambda function:
+[8.198s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:423:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.198s]   423 |           [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Can't accept new commands. subscriber is inactive");
+[8.198s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[8.198s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.198s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.198s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.198s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.198s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.198s]       |                                                    [01;36m[K^~~~~[m[K
+[8.199s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.199s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.200s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.200s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.200s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.200s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.200s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:423:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.200s]   423 |           RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Can't accept new commands. subscriber is inactive");
+[8.200s]       |                       [01;31m[K^~~~~[m[K
+[8.200s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.200s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.200s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.200s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.200s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.200s]       |                                                    [01;36m[K^~~~~[m[K
+[8.201s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.201s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.201s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.202s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.202s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.202s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.202s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:423:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.202s]   423 |           RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Can't accept new commands. subscriber is inactive");
+[8.202s]       |                       [01;31m[K^~~~~[m[K
+[8.203s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.203s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.203s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.203s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.203s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.203s]       |                                                    [01;36m[K^~~~~[m[K
+[8.204s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.204s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.204s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.204s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.204s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:428:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.205s]   428 |           [01;31m[KRCLCPP_WARN_ONCE[m[K(
+[8.205s]       |           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[8.205s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.205s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.205s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.205s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.205s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.205s]       |                                                    [01;36m[K^~~~~[m[K
+[8.206s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.206s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.207s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.207s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.207s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.207s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.207s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:429:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.207s]   429 |             [01;31m[Knode_[m[K->get_logger(),
+[8.207s]       |             [01;31m[K^~~~~[m[K
+[8.207s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.208s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.208s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.208s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.208s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.208s]       |                                                    [01;36m[K^~~~~[m[K
+[8.208s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.208s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.208s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.209s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.210s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.210s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.210s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:429:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.210s]   429 |             [01;31m[Knode_[m[K->get_logger(),
+[8.210s]       |             [01;31m[K^~~~~[m[K
+[8.210s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.210s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.211s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.211s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.211s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.211s]       |                                                    [01;36m[K^~~~~[m[K
+[8.211s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:432:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.211s]   432 |           msg->header.stamp = [01;31m[Knode_[m[K->get_clock()->now();
+[8.211s]       |                               [01;31m[K^~~~~[m[K
+[8.211s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.211s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.211s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.212s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.212s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.212s]       |                                                    [01;36m[K^~~~~[m[K
+[8.219s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual diff_drive_controller::CallbackReturn diff_drive_controller::DiffDriveController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[8.220s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:439:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.220s]   439 |     velocity_command_unstamped_subscriber_ = [01;31m[Knode_[m[K->create_subscription<geometry_msgs::msg::Twist>(
+[8.220s]       |                                              [01;31m[K^~~~~[m[K
+[8.220s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.220s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.220s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.220s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.220s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.220s]       |                                                    [01;36m[K^~~~~[m[K
+[8.224s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.225s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.226s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.226s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.226s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In lambda function:
+[8.226s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:444:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.226s]   444 |           [01;31m[KRCLCPP_WARN[m[K(node_->get_logger(), "Can't accept new commands. subscriber is inactive");
+[8.226s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[8.226s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.226s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.226s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.226s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.226s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.226s]       |                                                    [01;36m[K^~~~~[m[K
+[8.227s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.228s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.228s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.228s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.228s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.228s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:444:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.228s]   444 |           RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Can't accept new commands. subscriber is inactive");
+[8.228s]       |                       [01;31m[K^~~~~[m[K
+[8.228s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.228s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.228s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.228s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.228s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.228s]       |                                                    [01;36m[K^~~~~[m[K
+[8.229s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.229s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.229s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.230s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.230s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:444:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.230s]   444 |           RCLCPP_WARN([01;31m[Knode_[m[K->get_logger(), "Can't accept new commands. subscriber is inactive");
+[8.230s]       |                       [01;31m[K^~~~~[m[K
+[8.230s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.230s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.230s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.230s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.230s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.230s]       |                                                    [01;36m[K^~~~~[m[K
+[8.231s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:452:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.231s]   452 |         twist_stamped->header.stamp = [01;31m[Knode_[m[K->get_clock()->now();
+[8.231s]       |                                       [01;31m[K^~~~~[m[K
+[8.231s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.231s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.231s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.231s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.231s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.231s]       |                                                    [01;36m[K^~~~~[m[K
+[8.233s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual diff_drive_controller::CallbackReturn diff_drive_controller::DiffDriveController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[8.233s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:457:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.233s]   457 |   odometry_publisher_ = [01;31m[Knode_[m[K->create_publisher<nav_msgs::msg::Odometry>(
+[8.233s]       |                         [01;31m[K^~~~~[m[K
+[8.233s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.233s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.233s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.233s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.233s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.233s]       |                                                    [01;36m[K^~~~~[m[K
+[8.243s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:482:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.243s]   482 |   odometry_transform_publisher_ = [01;31m[Knode_[m[K->create_publisher<tf2_msgs::msg::TFMessage>(
+[8.243s]       |                                   [01;31m[K^~~~~[m[K
+[8.243s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.243s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.243s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.244s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.244s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.244s]       |                                                    [01;36m[K^~~~~[m[K
+[8.251s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:494:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.251s]   494 |   previous_update_timestamp_ = [01;31m[Knode_[m[K->get_clock()->now();
+[8.251s]       |                                [01;31m[K^~~~~[m[K
+[8.252s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.252s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.252s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.252s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.252s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.252s]       |                                                    [01;36m[K^~~~~[m[K
+[8.255s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.255s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.256s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.256s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.256s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual diff_drive_controller::CallbackReturn diff_drive_controller::DiffDriveController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[8.256s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:512:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.257s]   512 |     [01;31m[KRCLCPP_ERROR[m[K(
+[8.257s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.257s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.257s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.257s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.257s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.257s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.257s]       |                                                    [01;36m[K^~~~~[m[K
+[8.258s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.258s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.259s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.259s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.259s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:513:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.259s]   513 |       [01;31m[Knode_[m[K->get_logger(), "Either left wheel interfaces, right wheel interfaces are non existent");
+[8.259s]       |       [01;31m[K^~~~~[m[K
+[8.259s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.259s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.259s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.259s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.259s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.259s]       |                                                    [01;36m[K^~~~~[m[K
+[8.260s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.260s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.260s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.260s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.260s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:513:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.261s]   513 |       [01;31m[Knode_[m[K->get_logger(), "Either left wheel interfaces, right wheel interfaces are non existent");
+[8.261s]       |       [01;31m[K^~~~~[m[K
+[8.261s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.261s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.261s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.261s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.261s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.261s]       |                                                    [01;36m[K^~~~~[m[K
+[8.262s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.263s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.263s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.263s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.263s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.263s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:520:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.263s]   520 |   [01;31m[KRCLCPP_DEBUG[m[K(node_->get_logger(), "Subscriber and publisher are now active.");
+[8.263s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[8.263s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.263s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.263s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.263s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.263s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.263s]       |                                                    [01;36m[K^~~~~[m[K
+[8.264s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.264s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.265s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.265s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.265s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.265s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:520:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.265s]   520 |   RCLCPP_DEBUG([01;31m[Knode_[m[K->get_logger(), "Subscriber and publisher are now active.");
+[8.265s]       |                [01;31m[K^~~~~[m[K
+[8.265s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.265s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.265s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.265s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.265s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.265s]       |                                                    [01;36m[K^~~~~[m[K
+[8.266s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.266s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.266s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.266s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.266s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:520:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.266s]   520 |   RCLCPP_DEBUG([01;31m[Knode_[m[K->get_logger(), "Subscriber and publisher are now active.");
+[8.266s]       |                [01;31m[K^~~~~[m[K
+[8.267s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.267s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.267s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.267s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.267s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.267s]       |                                                    [01;36m[K^~~~~[m[K
+[8.273s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kdiff_drive_controller::CallbackReturn diff_drive_controller::DiffDriveController::configure_side(const string&, const std::vector<std::__cxx11::basic_string<char> >&, std::vector<diff_drive_controller::DiffDriveController::WheelHandle>&)[m[K’:
+[8.273s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:592:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.273s]   592 |   auto logger = [01;31m[Knode_[m[K->get_logger();
+[8.273s]       |                 [01;31m[K^~~~~[m[K
+[8.273s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.273s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/include/diff_drive_controller/diff_drive_controller.hpp:29[m[K,
+[8.273s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/diff_drive_controller/src/diff_drive_controller.cpp:25[m[K:
+[8.274s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.274s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.274s]       |                                                    [01;36m[K^~~~~[m[K
+[14.832s] [ 53%] [32m[1mLinking CXX static library libgmock.a[0m
+[15.114s] [ 53%] Built target gmock
+[15.140s] [ 60%] [32mBuilding CXX object CMakeFiles/test_accumulator.dir/test/test_accumulator.cpp.o[0m
+[15.141s] [ 66%] [32mBuilding CXX object CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o[0m
+[15.807s] gmake[2]: *** [CMakeFiles/diff_drive_controller.dir/build.make:76: CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o] Error 1
+[15.807s] gmake[1]: *** [CMakeFiles/Makefile2:180: CMakeFiles/diff_drive_controller.dir/all] Error 2
+[15.808s] gmake[1]: *** Waiting for unfinished jobs....
+[16.032s] [ 73%] [32m[1mLinking CXX executable test_accumulator[0m
+[16.214s] [ 73%] Built target test_accumulator
+[19.653s] [ 80%] [32m[1mLinking CXX executable test_load_diff_drive_controller[0m
+[19.929s] [ 80%] Built target test_load_diff_drive_controller
+[19.929s] gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,128 @@
+[0.623s] Invoking command in '/home/ubuntu/robot_ws/src/build/forward_command_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/forward_command_controller -- -j20 -l20
+[0.673s] [  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[0.673s] [ 18%] [32mBuilding CXX object CMakeFiles/forward_command_controller.dir/src/forward_command_controller.cpp.o[0m
+[0.695s] [ 27%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[0.697s] [ 36%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[3.547s] [ 45%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[3.939s] [ 45%] Built target gmock_main
+[8.001s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:[m[K In member function ‘[01m[Kvirtual forward_command_controller::CallbackReturn forward_command_controller::ForwardCommandController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[8.001s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:60:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.001s]    60 |   joint_names_ = [01;31m[Knode_[m[K->get_parameter("joints").as_string_array();
+[8.002s]       |                  [01;31m[K^~~~~[m[K
+[8.002s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.003s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.003s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.003s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.003s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.003s]       |                                                    [01;36m[K^~~~~[m[K
+[8.003s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:71:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.004s]    71 |     interface_name_ = [01;31m[Knode_[m[K->get_parameter("interface_name").as_string();
+[8.004s]       |                       [01;31m[K^~~~~[m[K
+[8.004s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.004s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.004s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.004s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.004s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.004s]       |                                                    [01;36m[K^~~~~[m[K
+[8.015s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.015s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.016s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.016s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.016s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.016s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:[m[K In member function ‘[01m[Kvirtual forward_command_controller::CallbackReturn forward_command_controller::ForwardCommandController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[8.016s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:120:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.016s]   120 |     [01;31m[KRCLCPP_ERROR[m[K(
+[8.016s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.017s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.017s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.017s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.017s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.017s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.017s]       |                                                    [01;36m[K^~~~~[m[K
+[8.017s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.017s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.017s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.017s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.017s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.017s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.018s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.018s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.018s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.018s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:121:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.018s]   121 |       [01;31m[Knode_[m[K->get_logger(), "Expected %zu position command interfaces, got %zu", joint_names_.size(),
+[8.018s]       |       [01;31m[K^~~~~[m[K
+[8.018s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.018s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.018s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.018s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.018s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.018s]       |                                                    [01;36m[K^~~~~[m[K
+[8.018s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.019s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.019s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.020s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.020s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:121:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.020s]   121 |       [01;31m[Knode_[m[K->get_logger(), "Expected %zu position command interfaces, got %zu", joint_names_.size(),
+[8.020s]       |       [01;31m[K^~~~~[m[K
+[8.020s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.020s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.020s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.020s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.020s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.020s]       |                                                    [01;36m[K^~~~~[m[K
+[8.020s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.020s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.021s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.021s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.021s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.021s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type forward_command_controller::ForwardCommandController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[8.021s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:154:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.021s]   154 |       get_node()->get_logger(), *[01;31m[Knode_[m[K->get_clock(), 1000,
+[8.021s]       |                                  [01;31m[K^~~~~[m[K
+[8.021s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.021s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/include/forward_command_controller/forward_command_controller.hpp:22[m[K,
+[8.021s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/forward_command_controller/src/forward_command_controller.cpp:15[m[K:
+[8.021s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.021s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.021s]       |                                                    [01;36m[K^~~~~[m[K
+[14.442s] gmake[2]: *** [CMakeFiles/forward_command_controller.dir/build.make:76: CMakeFiles/forward_command_controller.dir/src/forward_command_controller.cpp.o] Error 1
+[14.442s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/forward_command_controller.dir/all] Error 2
+[14.443s] gmake[1]: *** Waiting for unfinished jobs....
+[15.366s] [ 54%] [32m[1mLinking CXX static library libgmock.a[0m
+[15.458s] [ 54%] Built target gmock
+[15.458s] gmake: *** [Makefile:146: all] Error 2

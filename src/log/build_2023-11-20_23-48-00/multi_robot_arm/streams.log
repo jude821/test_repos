@@ -1,0 +1,160 @@
+[0.114s] Invoking command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/multi_robot_arm -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[0.203s] -- The C compiler identification is GNU 11.4.0
+[0.606s] -- The CXX compiler identification is GNU 11.4.0
+[1.007s] -- Detecting C compiler ABI info
+[1.147s] -- Detecting C compiler ABI info - done
+[1.151s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.151s] -- Detecting C compile features
+[1.151s] -- Detecting C compile features - done
+[1.153s] -- Detecting CXX compiler ABI info
+[1.297s] -- Detecting CXX compiler ABI info - done
+[1.301s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.302s] -- Detecting CXX compile features
+[1.302s] -- Detecting CXX compile features - done
+[1.311s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.442s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.485s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.537s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[1.730s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.739s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.750s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.766s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.794s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.866s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.873s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.910s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.924s] -- Looking for pthread.h
+[2.073s] -- Looking for pthread.h - found
+[2.073s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.220s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.221s] -- Found Threads: TRUE  
+[2.338s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.351s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.351s] -- Checking for module 'bullet>=2.82'
+[2.363s] --   Found bullet, version 3.05
+[2.496s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.532s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.554s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.587s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[3.121s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[3.129s] -- Looking for ignition-math6 -- found version 6.15.0
+[3.136s] -- Searching for dependencies of ignition-math6
+[3.137s] -- Looking for OGRE...
+[3.138s] -- OGRE_PREFIX_WATCH changed.
+[3.141s] -- Checking for module 'OGRE'
+[3.152s] --   Found OGRE, version 1.9.0
+[3.173s] -- Found Ogre Ghadamon (1.9.0)
+[3.731s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[3.738s] -- Looking for OGRE_Paging...
+[4.234s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.235s] -- Looking for OGRE_Terrain...
+[4.746s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.746s] -- Looking for OGRE_Property...
+[5.268s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[5.268s] -- Looking for OGRE_RTShaderSystem...
+[5.779s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[5.779s] -- Looking for OGRE_Volume...
+[6.300s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[6.300s] -- Looking for OGRE_Overlay...
+[6.819s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[33.942s] -- Looking for ignition-math6 -- found version 6.15.0
+[33.946s] -- Looking for ignition-transport8 -- found version 8.2.1
+[33.946s] -- Searching for dependencies of ignition-transport8
+[35.553s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[37.180s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[37.184s] -- Checking for module 'libzmq >= 4'
+[37.194s] --   Found libzmq , version 4.3.4
+[37.218s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[37.277s] -- Checking for module 'uuid'
+[37.288s] --   Found uuid, version 2.37.2
+[37.309s] -- Found UUID: TRUE  
+[37.312s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[37.313s] -- Searching for dependencies of ignition-msgs5
+[38.936s] -- Looking for ignition-math6 -- found version 6.15.0
+[38.940s] -- Checking for module 'tinyxml2'
+[38.951s] --   Found tinyxml2, version 9.0.0
+[38.974s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[38.977s] -- Looking for ignition-common3 -- found version 3.14.0
+[38.978s] -- Searching for dependencies of ignition-common3
+[39.030s] -- Looking for dlfcn.h - found
+[39.081s] -- Looking for libdl - found
+[39.081s] -- Found DL: TRUE  
+[39.214s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[39.214s] -- Searching for <ignition-common3> component [graphics]
+[39.218s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[39.218s] -- Searching for dependencies of ignition-common3-graphics
+[39.218s] -- Looking for ignition-math6 -- found version 6.15.0
+[39.223s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[39.223s] -- Searching for dependencies of ignition-fuel_tools4
+[41.116s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[41.125s] -- Checking for module 'jsoncpp'
+[41.139s] --   Found jsoncpp, version 1.9.5
+[41.162s] -- Found JSONCPP: TRUE  
+[41.167s] -- Checking for module 'libzip'
+[41.180s] --   Found libzip, version 1.7.3
+[41.203s] -- Found ZIP: TRUE  
+[41.203s] -- Looking for ignition-common3 -- found version 3.14.0
+[41.203s] -- Looking for ignition-math6 -- found version 6.15.0
+[41.204s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[41.209s] -- Gazebo version: 11.10
+[41.209s] -- Checking for module 'tbb'
+[41.223s] --   Found tbb, version 2021.5.0
+[41.305s] -- Configuring done
+[41.308s] -- Generating done
+[41.309s] -- Build files have been written to: /home/ubuntu/robot_ws/src/build/multi_robot_arm
+[41.320s] Invoked command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/multi_robot_arm -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[41.322s] Invoking command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/multi_robot_arm -- -j20 -l20
+[41.355s] Invoked command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/multi_robot_arm -- -j20 -l20
+[41.375s] Invoking command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/multi_robot_arm
+[41.382s] -- Install configuration: "Release"
+[41.382s] -- Execute custom install script
+[41.382s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/launch/gazebo_arm.launch.py
+[41.391s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/chomp_planning.yaml
+[41.399s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/default_kinematics.yaml
+[41.406s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/initial_positions.yaml
+[41.415s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/joint_limits.yaml
+[41.423s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/joint_limits_planning.yaml
+[41.430s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/kinematics.yaml
+[41.437s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/moveit_controller_manager.yaml
+[41.445s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/ompl_planning.yaml
+[41.451s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/physical_parameters.yaml
+[41.459s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/robot.srdf
+[41.465s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/ros_controllers_robot.yaml
+[41.473s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/config/ur/ur5/visual_parameters.yaml
+[41.481s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/inc/ur_common.xacro
+[41.489s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/inc/ur_transmissions.xacro
+[41.498s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/base.stl
+[41.508s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/forearm.stl
+[41.515s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/shoulder.stl
+[41.524s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/upperarm.stl
+[41.532s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/wrist1.stl
+[41.545s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/wrist2.stl
+[41.553s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/collision/wrist3.stl
+[41.561s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/base.dae
+[41.570s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/forearm.dae
+[41.577s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/shoulder.dae
+[41.585s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/upperarm.dae
+[41.593s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/wrist1.dae
+[41.601s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/wrist2.dae
+[41.607s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/meshes/ur5/visual/wrist3.dae
+[41.616s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/ur5/ur_macro.xacro
+[41.623s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/ur5/ur_ros2_control.xacro
+[41.631s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/urdf/ur/ur5/ur_urdf.xacro
+[41.637s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/worlds/empty.world
+[41.644s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/environment/multi_robot_arm.dsv
+[41.652s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/ament_index/resource_index/package_run_dependencies/multi_robot_arm
+[41.658s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/ament_index/resource_index/parent_prefix_path/multi_robot_arm
+[41.666s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/environment/ament_prefix_path.sh
+[41.673s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/environment/ament_prefix_path.dsv
+[41.681s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/environment/path.sh
+[41.688s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/environment/path.dsv
+[41.696s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/local_setup.bash
+[41.702s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/local_setup.sh
+[41.710s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/local_setup.zsh
+[41.718s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/local_setup.dsv
+[41.725s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.dsv
+[41.731s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/ament_index/resource_index/packages/multi_robot_arm
+[41.738s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/cmake/multi_robot_armConfig.cmake
+[41.745s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/cmake/multi_robot_armConfig-version.cmake
+[41.751s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/multi_robot_arm/package.xml
+[41.758s] Invoked command in '/home/ubuntu/robot_ws/src/build/multi_robot_arm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/multi_robot_arm

@@ -1,0 +1,1 @@
+/home/ubuntu/robot_ws/src/pymoveit2/pymoveit2/gripper_command.py

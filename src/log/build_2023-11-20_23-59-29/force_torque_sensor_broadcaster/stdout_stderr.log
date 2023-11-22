@@ -1,0 +1,378 @@
+[  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/force_torque_sensor_broadcaster.dir/src/force_torque_sensor_broadcaster.cpp.o[0m
+[ 36%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[ 45%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[ 45%] Built target gmock_main
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual force_torque_sensor_broadcaster::CallbackReturn force_torque_sensor_broadcaster::ForceTorqueSensorBroadcaster::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:56:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   56 |   sensor_name_ = [01;31m[Knode_[m[K->get_parameter("sensor_name").as_string();
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:57:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   57 |   interface_names_[0] = [01;31m[Knode_[m[K->get_parameter("interface_names.force.x").as_string();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:58:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   58 |   interface_names_[1] = [01;31m[Knode_[m[K->get_parameter("interface_names.force.y").as_string();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:59:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   59 |   interface_names_[2] = [01;31m[Knode_[m[K->get_parameter("interface_names.force.z").as_string();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:60:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   60 |   interface_names_[3] = [01;31m[Knode_[m[K->get_parameter("interface_names.torque.x").as_string();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:61:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   61 |   interface_names_[4] = [01;31m[Knode_[m[K->get_parameter("interface_names.torque.y").as_string();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:62:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   62 |   interface_names_[5] = [01;31m[Knode_[m[K->get_parameter("interface_names.torque.z").as_string();
+      |                         [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   69 |     [01;31m[KRCLCPP_ERROR[m[K(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:70:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   70 |       [01;31m[Knode_[m[K->get_logger(),
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:70:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   70 |       [01;31m[Knode_[m[K->get_logger(),
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:78:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   78 |     [01;31m[KRCLCPP_ERROR[m[K(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:79:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   79 |       [01;31m[Knode_[m[K->get_logger(),
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:79:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   79 |       [01;31m[Knode_[m[K->get_logger(),
+      |       [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:85:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   85 |   frame_id_ = [01;31m[Knode_[m[K->get_parameter("frame_id").as_string();
+      |               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   88 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "'frame_id' parameter has to be provided.");
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:88:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   88 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "'frame_id' parameter has to be provided.");
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:88:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+   88 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "'frame_id' parameter has to be provided.");
+      |                  [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:108:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  108 |     sensor_state_publisher_ = [01;31m[Knode_[m[K->create_publisher<geometry_msgs::msg::WrenchStamped>(
+      |                               [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:124:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  124 |   [01;31m[KRCLCPP_DEBUG[m[K(node_->get_logger(), "configure successful");
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:124:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  124 |   RCLCPP_DEBUG([01;31m[Knode_[m[K->get_logger(), "configure successful");
+      |                [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:124:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+  124 |   RCLCPP_DEBUG([01;31m[Knode_[m[K->get_logger(), "configure successful");
+      |                [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/include/force_torque_sensor_broadcaster/force_torque_sensor_broadcaster.hpp:26[m[K,
+                 from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/force_torque_sensor_broadcaster/src/force_torque_sensor_broadcaster.cpp:19[m[K:
+[01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+  227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+      |                                                    [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/force_torque_sensor_broadcaster.dir/build.make:76: CMakeFiles/force_torque_sensor_broadcaster.dir/src/force_torque_sensor_broadcaster.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/force_torque_sensor_broadcaster.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 54%] [32m[1mLinking CXX static library libgmock.a[0m
+[ 54%] Built target gmock
+gmake: *** [Makefile:146: all] Error 2

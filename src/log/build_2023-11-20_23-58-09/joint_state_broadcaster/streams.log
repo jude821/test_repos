@@ -1,0 +1,40 @@
+[0.554s] Invoking command in '/home/ubuntu/robot_ws/src/build/joint_state_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[0.695s] -- The C compiler identification is GNU 11.4.0
+[1.309s] -- The CXX compiler identification is GNU 11.4.0
+[1.581s] -- Detecting C compiler ABI info
+[1.755s] -- Detecting C compiler ABI info - done
+[1.762s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.762s] -- Detecting C compile features
+[1.762s] -- Detecting C compile features - done
+[1.764s] -- Detecting CXX compiler ABI info
+[1.914s] -- Detecting CXX compiler ABI info - done
+[1.921s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.922s] -- Detecting CXX compile features
+[1.922s] -- Detecting CXX compile features - done
+[1.927s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.147s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.204s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.272s] -- Found control_msgs: 4.4.0 (/opt/ros/humble/share/control_msgs/cmake)
+[2.461s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.471s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.488s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.539s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.094s] -- Found controller_interface: 2.32.0 (/opt/ros/humble/share/controller_interface/cmake)
+[4.301s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.311s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[4.361s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[4.380s] -- Looking for pthread.h
+[4.502s] -- Looking for pthread.h - found
+[4.502s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.667s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.668s] -- Found Threads: TRUE  
+[4.968s] -- Found ament_cmake_gmock: 1.3.5 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[4.975s] -- Found controller_manager: 2.32.0 (/opt/ros/humble/share/controller_manager/cmake)
+[5.197s] -- Found ros2_control_test_assets: 2.32.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[5.206s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[5.219s] -- Found ament_cmake_gtest: 1.3.5 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[5.221s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.577s] -- Configuring done
+[5.644s] -- Generating done
+[5.646s] -- Build files have been written to: /home/ubuntu/robot_ws/src/build/joint_state_broadcaster

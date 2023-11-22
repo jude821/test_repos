@@ -1,0 +1,81 @@
+[0.062s] Invoking command in '/home/ubuntu/robot_ws/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/pymoveit2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[0.155s] -- The C compiler identification is GNU 11.4.0
+[0.570s] -- The CXX compiler identification is GNU 11.4.0
+[0.998s] -- Detecting C compiler ABI info
+[1.135s] -- Detecting C compiler ABI info - done
+[1.139s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.139s] -- Detecting C compile features
+[1.139s] -- Detecting C compile features - done
+[1.141s] -- Detecting CXX compiler ABI info
+[1.286s] -- Detecting CXX compiler ABI info - done
+[1.290s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.291s] -- Detecting CXX compile features
+[1.291s] -- Detecting CXX compile features - done
+[1.295s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.426s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.469s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.634s] -- Configuring done
+[1.637s] -- Generating done
+[1.637s] -- Build files have been written to: /home/ubuntu/robot_ws/src/build/pymoveit2
+[1.640s] Invoked command in '/home/ubuntu/robot_ws/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake /home/ubuntu/robot_ws/src/pymoveit2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robot_ws/src/install
+[1.642s] Invoking command in '/home/ubuntu/robot_ws/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/pymoveit2 -- -j20 -l20
+[1.683s] Built target ament_cmake_python_symlink_pymoveit2
+[1.851s] running egg_info
+[1.851s] creating pymoveit2.egg-info
+[1.851s] writing pymoveit2.egg-info/PKG-INFO
+[1.851s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[1.851s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[1.851s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.852s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.853s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.871s] Built target ament_cmake_python_build_pymoveit2_egg
+[1.880s] Invoked command in '/home/ubuntu/robot_ws/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/pymoveit2 -- -j20 -l20
+[1.907s] Invoking command in '/home/ubuntu/robot_ws/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/pymoveit2
+[1.912s] -- Install configuration: "Release"
+[1.913s] -- Execute custom install script
+[1.913s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/environment/pythonpath.sh
+[1.919s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/environment/pythonpath.dsv
+[1.927s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/PKG-INFO
+[1.934s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/SOURCES.txt
+[1.940s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/dependency_links.txt
+[1.946s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/top_level.txt
+[1.953s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/__init__.py
+[1.963s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/gripper_command.py
+[1.969s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py
+[1.977s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/moveit2_gripper.py
+[1.983s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py
+[1.990s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py
+[1.996s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots/panda.py
+[2.002s] -- Symlinking: /home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots/ur5.py
+[2.009s] -- Symlinking: /home/ubuntu/robot_ws/src/install/lib/pymoveit2/ex_collision_object.py
+[2.015s] -- Symlinking: /home/ubuntu/robot_ws/src/install/lib/pymoveit2/ex_gripper_command.py
+[2.021s] -- Symlinking: /home/ubuntu/robot_ws/src/install/lib/pymoveit2/ex_gripper.py
+[2.027s] -- Symlinking: /home/ubuntu/robot_ws/src/install/lib/pymoveit2/ex_joint_goal.py
+[2.032s] -- Symlinking: /home/ubuntu/robot_ws/src/install/lib/pymoveit2/ex_pose_goal.py
+[2.039s] -- Symlinking: /home/ubuntu/robot_ws/src/install/lib/pymoveit2/ex_servo.py
+[2.045s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/ament_index/resource_index/package_run_dependencies/pymoveit2
+[2.053s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/ament_index/resource_index/parent_prefix_path/pymoveit2
+[2.059s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/environment/ament_prefix_path.sh
+[2.065s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/environment/ament_prefix_path.dsv
+[2.073s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/environment/path.sh
+[2.079s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/environment/path.dsv
+[2.087s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/local_setup.bash
+[2.093s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/local_setup.sh
+[2.099s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/local_setup.zsh
+[2.107s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/local_setup.dsv
+[2.112s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/package.dsv
+[2.120s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/ament_index/resource_index/packages/pymoveit2
+[2.126s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/cmake/pymoveit2Config.cmake
+[2.133s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/cmake/pymoveit2Config-version.cmake
+[2.140s] -- Symlinking: /home/ubuntu/robot_ws/src/install/share/pymoveit2/package.xml
+[2.176s] Listing '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2'...
+[2.176s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/__init__.py'...
+[2.176s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/gripper_command.py'...
+[2.176s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py'...
+[2.177s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/moveit2_gripper.py'...
+[2.177s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py'...
+[2.177s] Listing '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots'...
+[2.177s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py'...
+[2.177s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots/panda.py'...
+[2.177s] Compiling '/home/ubuntu/robot_ws/src/install/local/lib/python3.10/dist-packages/pymoveit2/robots/ur5.py'...
+[2.182s] Invoked command in '/home/ubuntu/robot_ws/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/robot_ws/src/build/pymoveit2

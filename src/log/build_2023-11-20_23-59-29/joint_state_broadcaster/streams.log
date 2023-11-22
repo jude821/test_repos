@@ -1,0 +1,299 @@
+[0.559s] Invoking command in '/home/ubuntu/robot_ws/src/build/joint_state_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/joint_state_broadcaster -- -j20 -l20
+[0.614s] [  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[0.621s] [ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[0.622s] [ 27%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[0.623s] [ 36%] [32mBuilding CXX object CMakeFiles/joint_state_broadcaster.dir/src/joint_state_broadcaster.cpp.o[0m
+[3.074s] [ 45%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[3.862s] [ 45%] Built target gmock_main
+[7.750s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.752s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.752s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.752s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.752s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual joint_state_broadcaster::CallbackReturn joint_state_broadcaster::JointStateBroadcaster::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[7.752s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:106:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.752s]   106 |     [01;31m[KRCLCPP_INFO[m[K(
+[7.752s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[7.753s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.753s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.753s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.753s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.753s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.753s]       |                                                    [01;36m[K^~~~~[m[K
+[7.753s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.753s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.754s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.755s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.755s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.755s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.755s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.755s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:107:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.755s]   107 |       [01;31m[Knode_[m[K->get_logger(),
+[7.755s]       |       [01;31m[K^~~~~[m[K
+[7.755s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.755s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.755s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.756s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.756s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.756s]       |                                                    [01;36m[K^~~~~[m[K
+[7.756s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.756s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.757s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.757s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.757s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.757s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.757s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.757s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.757s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:107:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.757s]   107 |       [01;31m[Knode_[m[K->get_logger(),
+[7.757s]       |       [01;31m[K^~~~~[m[K
+[7.758s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.758s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.758s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.758s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.758s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.758s]       |                                                    [01;36m[K^~~~~[m[K
+[7.758s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.759s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.759s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.759s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.759s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:113:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.759s]   113 |     [01;31m[KRCLCPP_INFO[m[K(
+[7.760s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[7.760s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.760s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.760s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.760s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.760s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.760s]       |                                                    [01;36m[K^~~~~[m[K
+[7.760s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.760s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.760s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.760s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.760s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.761s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.761s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.761s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.761s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:114:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.761s]   114 |       [01;31m[Knode_[m[K->get_logger(),
+[7.761s]       |       [01;31m[K^~~~~[m[K
+[7.762s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.762s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.768s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.769s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.769s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.770s]       |                                                    [01;36m[K^~~~~[m[K
+[7.770s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.771s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.771s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.771s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.772s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.772s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.772s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.773s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.773s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.773s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.773s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.773s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.773s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:114:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.773s]   114 |       [01;31m[Knode_[m[K->get_logger(),
+[7.774s]       |       [01;31m[K^~~~~[m[K
+[7.774s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.774s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.774s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.774s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.774s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.774s]       |                                                    [01;36m[K^~~~~[m[K
+[7.791s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.792s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.792s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.792s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.792s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.792s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual joint_state_broadcaster::CallbackReturn joint_state_broadcaster::JointStateBroadcaster::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[7.792s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:143:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.792s]   143 |     [01;31m[KRCLCPP_ERROR[m[K(
+[7.792s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[7.792s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.792s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.792s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.792s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.792s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.792s]       |                                                    [01;36m[K^~~~~[m[K
+[7.793s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.793s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.793s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.793s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.794s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:144:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.794s]   144 |       [01;31m[Knode_[m[K->get_logger(), "None of requested interfaces exist. Controller will not run.");
+[7.794s]       |       [01;31m[K^~~~~[m[K
+[7.794s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.794s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.794s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.794s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.795s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.795s]       |                                                    [01;36m[K^~~~~[m[K
+[7.795s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.795s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.796s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.796s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.796s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:144:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.796s]   144 |       [01;31m[Knode_[m[K->get_logger(), "None of requested interfaces exist. Controller will not run.");
+[7.796s]       |       [01;31m[K^~~~~[m[K
+[7.796s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.796s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.797s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.797s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.797s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.797s]       |                                                    [01;36m[K^~~~~[m[K
+[7.797s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.797s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.798s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.798s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.798s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.798s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.798s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:155:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.798s]   155 |     [01;31m[KRCLCPP_WARN[m[K(
+[7.798s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[7.798s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.798s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.798s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.798s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.798s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.798s]       |                                                    [01;36m[K^~~~~[m[K
+[7.799s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.800s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.800s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.800s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.800s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.800s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:156:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.800s]   156 |       [01;31m[Knode_[m[K->get_logger(),
+[7.800s]       |       [01;31m[K^~~~~[m[K
+[7.800s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.801s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.801s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.801s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.801s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.801s]       |                                                    [01;36m[K^~~~~[m[K
+[7.801s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[7.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[7.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[7.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.802s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[7.802s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.802s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.802s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.802s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:156:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[7.802s]   156 |       [01;31m[Knode_[m[K->get_logger(),
+[7.802s]       |       [01;31m[K^~~~~[m[K
+[7.802s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[7.802s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/include/joint_state_broadcaster/joint_state_broadcaster.hpp:24[m[K,
+[7.803s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/joint_state_broadcaster/src/joint_state_broadcaster.cpp:15[m[K:
+[7.803s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[7.803s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[7.803s]       |                                                    [01;36m[K^~~~~[m[K
+[10.444s] gmake[2]: *** [CMakeFiles/joint_state_broadcaster.dir/build.make:76: CMakeFiles/joint_state_broadcaster.dir/src/joint_state_broadcaster.cpp.o] Error 1
+[10.444s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/joint_state_broadcaster.dir/all] Error 2
+[10.444s] gmake[1]: *** Waiting for unfinished jobs....
+[15.660s] [ 54%] [32m[1mLinking CXX static library libgmock.a[0m
+[15.733s] [ 54%] Built target gmock
+[15.734s] gmake: *** [Makefile:146: all] Error 2

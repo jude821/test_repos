@@ -1,0 +1,326 @@
+[0.370s] Invoking command in '/home/ubuntu/robot_ws/src/build/imu_sensor_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/install/turtlebot3_teleop:/home/ubuntu/install/turtlebot3_example:/home/ubuntu/install/the_simplest_python_package:/home/ubuntu/install/python_package_with_a_node:/home/ubuntu/install/python_package_that_uses_the_library:/home/ubuntu/install/python_package_with_a_library:/home/ubuntu/ws_moveit/install/moveit_configs_utils:/home/ubuntu/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/robot_ws/src/build/imu_sensor_broadcaster -- -j20 -l20
+[0.429s] [  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[0.429s] [ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[0.447s] [ 27%] [32mBuilding CXX object CMakeFiles/imu_sensor_broadcaster.dir/src/imu_sensor_broadcaster.cpp.o[0m
+[0.456s] [ 36%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[2.886s] [ 45%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[3.643s] [ 45%] Built target gmock_main
+[8.618s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.623s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.626s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.627s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.627s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual imu_sensor_broadcaster::CallbackReturn imu_sensor_broadcaster::IMUSensorBroadcaster::on_init()[m[K’:
+[8.627s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.627s]    35 |     [01;31m[KRCLCPP_ERROR[m[K(
+[8.627s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.627s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.627s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.627s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.627s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.627s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.627s]       |                                                    [01;36m[K^~~~~[m[K
+[8.627s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.628s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.628s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.628s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.628s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.629s]    36 |       [01;31m[Knode_[m[K->get_logger(), "Exception thrown during init stage with message: %s \n", e.what());
+[8.629s]       |       [01;31m[K^~~~~[m[K
+[8.629s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.629s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.629s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.629s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.629s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.629s]       |                                                    [01;36m[K^~~~~[m[K
+[8.629s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.629s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.629s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.629s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.629s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.630s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.630s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.630s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.630s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:36:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.630s]    36 |       [01;31m[Knode_[m[K->get_logger(), "Exception thrown during init stage with message: %s \n", e.what());
+[8.631s]       |       [01;31m[K^~~~~[m[K
+[8.631s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.631s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.631s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.631s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.631s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.631s]       |                                                    [01;36m[K^~~~~[m[K
+[8.631s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual imu_sensor_broadcaster::CallbackReturn imu_sensor_broadcaster::IMUSensorBroadcaster::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[8.631s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:46:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.631s]    46 |   sensor_name_ = [01;31m[Knode_[m[K->get_parameter("sensor_name").as_string();
+[8.631s]       |                  [01;31m[K^~~~~[m[K
+[8.631s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.631s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.631s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.631s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.631s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.632s]       |                                                    [01;36m[K^~~~~[m[K
+[8.632s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.632s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.632s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.632s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.632s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.633s]    49 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "'sensor_name' parameter has to be specified.");
+[8.633s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.633s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.633s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.633s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.633s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.633s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.633s]       |                                                    [01;36m[K^~~~~[m[K
+[8.633s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.634s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.634s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.634s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.634s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.634s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:49:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.634s]    49 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "'sensor_name' parameter has to be specified.");
+[8.634s]       |                  [01;31m[K^~~~~[m[K
+[8.634s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.634s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.635s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.635s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.635s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.635s]       |                                                    [01;36m[K^~~~~[m[K
+[8.635s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.636s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.636s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.636s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.636s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.636s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:49:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.636s]    49 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "'sensor_name' parameter has to be specified.");
+[8.636s]       |                  [01;31m[K^~~~~[m[K
+[8.636s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.636s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.636s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.636s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.636s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.636s]       |                                                    [01;36m[K^~~~~[m[K
+[8.637s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:53:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.637s]    53 |   frame_id_ = [01;31m[Knode_[m[K->get_parameter("frame_id").as_string();
+[8.637s]       |               [01;31m[K^~~~~[m[K
+[8.637s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.637s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.637s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.637s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.637s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.637s]       |                                                    [01;36m[K^~~~~[m[K
+[8.637s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.644s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.645s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.645s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.645s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.645s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.645s]    56 |     [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(), "'frame_id' parameter has to be provided.");
+[8.646s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[8.646s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.646s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.646s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.646s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.646s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.646s]       |                                                    [01;36m[K^~~~~[m[K
+[8.646s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.647s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.647s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.647s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.647s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.647s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:56:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.647s]    56 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "'frame_id' parameter has to be provided.");
+[8.647s]       |                  [01;31m[K^~~~~[m[K
+[8.647s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.647s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.647s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.648s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.648s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.648s]       |                                                    [01;36m[K^~~~~[m[K
+[8.648s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.648s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.649s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.649s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.649s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:56:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.649s]    56 |     RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(), "'frame_id' parameter has to be provided.");
+[8.649s]       |                  [01;31m[K^~~~~[m[K
+[8.649s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.649s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.649s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.649s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.649s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.649s]       |                                                    [01;36m[K^~~~~[m[K
+[8.649s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:66:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.649s]    66 |       [01;31m[Knode_[m[K->create_publisher<sensor_msgs::msg::Imu>("~/imu", rclcpp::SystemDefaultsQoS());
+[8.649s]       |       [01;31m[K^~~~~[m[K
+[8.649s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.649s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.650s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.650s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.650s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.650s]       |                                                    [01;36m[K^~~~~[m[K
+[8.650s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.651s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.651s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.651s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.651s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.651s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:81:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.651s]    81 |   [01;31m[KRCLCPP_DEBUG[m[K(node_->get_logger(), "configure successful");
+[8.651s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[8.651s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.651s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.651s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.651s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.651s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.651s]       |                                                    [01;36m[K^~~~~[m[K
+[8.651s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.652s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.652s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.652s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.652s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:81:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.652s]    81 |   RCLCPP_DEBUG([01;31m[Knode_[m[K->get_logger(), "configure successful");
+[8.653s]       |                [01;31m[K^~~~~[m[K
+[8.653s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.653s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.653s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.653s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.653s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.653s]       |                                                    [01;36m[K^~~~~[m[K
+[8.653s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[8.653s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[8.654s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[8.654s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[8.654s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[8.654s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.669s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.670s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.670s] [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:81:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_ptr<rclcpp_lifecycle::LifecycleNode> controller_interface::ControllerInterfaceBase::node_[m[K’ is private within this context
+[8.670s]    81 |   RCLCPP_DEBUG([01;31m[Knode_[m[K->get_logger(), "configure successful");
+[8.670s]       |                [01;31m[K^~~~~[m[K
+[8.670s] In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[8.670s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/include/imu_sensor_broadcaster/imu_sensor_broadcaster.hpp:26[m[K,
+[8.670s]                  from [01m[K/home/ubuntu/robot_ws/src/ros2_controllers/imu_sensor_broadcaster/src/imu_sensor_broadcaster.cpp:19[m[K:
+[8.670s] [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:227:52:[m[K [01;36m[Knote: [m[Kdeclared private here
+[8.670s]   227 |   std::shared_ptr<rclcpp_lifecycle::LifecycleNode> [01;36m[Knode_[m[K;
+[8.670s]       |                                                    [01;36m[K^~~~~[m[K
+[10.753s] gmake[2]: *** [CMakeFiles/imu_sensor_broadcaster.dir/build.make:76: CMakeFiles/imu_sensor_broadcaster.dir/src/imu_sensor_broadcaster.cpp.o] Error 1
+[10.753s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/imu_sensor_broadcaster.dir/all] Error 2
+[10.754s] gmake[1]: *** Waiting for unfinished jobs....
+[15.286s] [ 54%] [32m[1mLinking CXX static library libgmock.a[0m
+[15.371s] [ 54%] Built target gmock
+[15.371s] gmake: *** [Makefile:146: all] Error 2
